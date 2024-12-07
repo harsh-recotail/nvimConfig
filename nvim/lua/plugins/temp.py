@@ -7,6 +7,10 @@ def fib(n:int):
 print(fib(5))
 
 def pnr(a:int,b:int):
+    '''
+    return a ^ b
+    >>> a * a // b times
+    '''
     return b**a 
 
 print(pnr(6,2))        

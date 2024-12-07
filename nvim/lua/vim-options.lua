@@ -33,14 +33,10 @@ map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "Toggle relative number" })
 -- terminal
 map("t", "<C-x>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
 
--- new terminals
-map("n", "<leader>h", function()
-  require("nvchad.term").new { pos = "sp" }
-end, { desc = "terminal new horizontal term" })
-
-map("n", "<leader>v", function()
-  require("nvchad.term").new { pos = "vsp" }
-end, { desc = "terminal new vertical window" })
-
+-- quick mode toggel
 map("i", "jk", "<Esc>", { desc = "Toggle mode", noremap = true })
+map("i", "kj", "<Esc>", { desc = "Toggle mode", noremap = true })
+
+-- copy to clipboard
+map("v", "Y", [["+y]], { desc = "Toggle mode", noremap = true })
 

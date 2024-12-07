@@ -25,6 +25,15 @@ return {
           completion = cmp.config.window.bordered(),
           documentation = cmp.config.window.bordered(),
         },
+        -- formatting = {
+        --   format = function(entry, item)
+        --     -- Include the signature in the completion item
+        --     if item.kind == 3 then  -- Check if the kind is a function
+        --       item.abbr = item.label .. " " .. item.detail  -- Append the signature
+        --     end
+        --     return item
+        --   end,
+        -- },
         mapping = cmp.mapping.preset.insert({
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
